@@ -8,10 +8,10 @@ reference:
 
 ## Table of Contents
 
-* [resnet_v2](#resnet-v2)
+* [resnet_v2](#resnet_v2)
 * [bottleneck](#bottleneck)
-* [resent_v2_block](#resnet-v2-block)
-* [resnet_v2_50](#resnet-v2-50)
+* [resent_v2_block](#resnet_v2_block)
+* [resnet_v2_50](#resnet_v2_50)
 
 ## resnet_v2
 
