@@ -9,12 +9,10 @@ reference:
 
 - https://blog.csdn.net/a940902940902/article/details/83858694
 
-<span id = "img1">image1</span>
-
 <p align="center">
     <img src="./img/2.png" alt="Sample"  width="900">
   	<p align="center">
-    	<em style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">各种深度的ResNet</em>
+    	<em style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">各种深度的ResNet<span id = "img1">image1</span></em>
 </p>
 
 
