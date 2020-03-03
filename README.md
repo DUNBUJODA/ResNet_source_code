@@ -7,7 +7,9 @@ reference:
 - https://www.jianshu.com/p/e502e4b43e6d
 - https://blog.csdn.net/a940902940902/article/details/83858694
 
-![2](./img/2.png)
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="./img/2.png">    <br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">各种深度的ResNet</div> </center>
+
+
 
 ## Table of Contents
 
@@ -142,7 +144,11 @@ with tf.variable_scope(scope, 'resnet_v2', [inputs], reuse=reuse) as sc:
 
 - 这个基本单元的特点是：参数少，训练时间短
 
-<img src="./img/1.png" alt="1" style="zoom:50%;" />
+<center>    
+  <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);    zoom: 70%"    src="./img/1.png">    
+  <br>    
+  <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">bottleneck结构</div> 
+</center>
 
 
 ### 参数
