@@ -144,16 +144,11 @@ with tf.variable_scope(scope, 'resnet_v2', [inputs], reuse=reuse) as sc:
 
 - 这个基本单元的特点是：参数少，训练时间短
 
-<center>    
-  <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);    zoom: 70%"    src="./img/1.png">    
-  <br>    
-  <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">bottleneck结构</div> 
-</center>
 
 <p align="center">
-	<img src="./img/1.png" alt="Sample"  width="250" height="140">
+	<img src="./img/1.png" alt="Sample"  width="300">
 	<p align="center">
-		<em>图片示例2</em>
+		<em style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">bottleneck结构</em>
 	</p>
 </p>
 
@@ -169,7 +164,7 @@ def bottleneck(inputs, depth, depth_bottleneck, stride, rate=1,
 - inputs: A tensor of size [batch, height, width, channels]. 
 
   - 为什么输入bottleneck之前是56 \* 56 \* 64* ? --> （见[笔记的第一张图](./img/2.png)）因为ResNet接受的图像大小为224 * 224。经过第一层卷积层（input_channel=3, kernel_size=7x7, kernel_num=64, padding=3, stride=2）后，得$floor((224-7+3)/2)+1=112$。再经过一层池化（kernel_size=3, stride=2, padding=1），得$floor((112+2*1-3)/2)+1=56$。意味着：bottleneck的输入为$ 56（height） * 56(weight) * 64(channel) $ 的feature map。
-    
+  
 - depth: The depth of the ResNet unit output. 残差单元的输出层（最后一层）的通道数；
 - depth_bottleneck: The depth of the bottleneck layers. 残差单元的前面2层的通道数；
 - （见[笔记的第一张图](./img/2.png)）
