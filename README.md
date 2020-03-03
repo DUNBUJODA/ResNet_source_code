@@ -171,7 +171,7 @@ def bottleneck(inputs, depth, depth_bottleneck, stride, rate=1,
 
 - inputs: A tensor of size [batch, height, width, channels]. 
 
-  - 为什么输入bottleneck之前是56 \* 56 \* 64* ? --> （见[笔记的第一张图](#image1)）因为ResNet接受的图像大小为224 * 224。经过第一层卷积层（input_channel=3, kernel_size=7x7, kernel_num=64, padding=3, stride=2）后，得$floor((224-7+3)/2)+1=112$。再经过一层池化（kernel_size=3, stride=2, padding=1），得$floor((112+2*1-3)/2)+1=56$。意味着：bottleneck的输入为$ 56（height） * 56(weight) * 64(channel) $ 的feature map。
+  - 为什么输入bottleneck之前是56 \* 56 \* 64* ? --> （见笔记的第一张图[image1](#img1)）因为ResNet接受的图像大小为224 * 224。经过第一层卷积层（input_channel=3, kernel_size=7x7, kernel_num=64, padding=3, stride=2）后，得$floor((224-7+3)/2)+1=112$。再经过一层池化（kernel_size=3, stride=2, padding=1），得$floor((112+2*1-3)/2)+1=56$。意味着：bottleneck的输入为$ 56（height） * 56(weight) * 64(channel) $ 的feature map。
   
 - depth: The depth of the ResNet unit output. 残差单元的输出层（最后一层）的通道数；
 - depth_bottleneck: The depth of the bottleneck layers. 残差单元的前面2层的通道数；
