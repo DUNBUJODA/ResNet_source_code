@@ -150,6 +150,12 @@ with tf.variable_scope(scope, 'resnet_v2', [inputs], reuse=reuse) as sc:
   <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">bottleneck结构</div> 
 </center>
 
+<p align="center">
+	<img src="./img/1.png" alt="Sample"  width="250" height="140">
+	<p align="center">
+		<em>图片示例2</em>
+	</p>
+</p>
 
 ### 参数
 
